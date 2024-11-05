@@ -1,8 +1,5 @@
 FROM continuumio/miniconda3:latest
 
-RUN apt update && apt install -yqq git && \
-    git clone https://github.com/oushujun/EDTA.git
-
 ADD EDTA /EDTA
 
 WORKDIR /EDTA
