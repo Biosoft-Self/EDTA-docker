@@ -69,13 +69,11 @@ jobs:
 
       # Build and push Docker image with Buildx (don't push on PR)
       
-      - name: Clone GuillaumeFalourd/poc-github-actions PUBLIC repository
-        uses: GuillaumeFalourd/clone-github-repo-action@v2.3
+      - name: 'Preparing blueprint-environment'
+        uses: actions/checkout@v4
         with:
-          depth: 1
-          branch: 'main'
-          owner: 'oushujun'
-          repository: 'EDTA'
+          repository: oushujun/EDTA
+          path: EDTA
       # https://github.com/docker/build-push-action
       - name: Build and push Docker image
         id: build-and-push
