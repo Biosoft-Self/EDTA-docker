@@ -1,2 +1,2 @@
 # EDTA-docker
-A full environment for EDTA
+The ability to quickly set up an EDTA environment for analysis, which is more complete than the official image (without additional configuration)
