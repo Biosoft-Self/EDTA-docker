@@ -1,7 +1,6 @@
 FROM continuumio/miniconda3:latest
 
 ADD EDTA /EDTA
-
 WORKDIR /EDTA
 
 RUN apt update && apt install -yqq unzip openjdk-17-jre && \
